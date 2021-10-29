@@ -1,11 +1,15 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
+import posts from './posts'
+import postCommeonts from '@/store/postCommeonts'
 
-Vue.use(Vuex);
+
+Vue.use(Vuex)
+
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {},
-});
+    modules: {
+        posts,
+        postCommeonts
+    }
+})
